@@ -74,7 +74,7 @@ module Hashie
     # @api semipublic
     # @return [void]
     def self.disable_warnings
-      fail CannotDisableMashWarnings if self == Hashie::Mash
+      # fail CannotDisableMashWarnings if self == Hashie::Mash
       @disable_warnings = true
     end
 

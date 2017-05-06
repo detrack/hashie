@@ -59,5 +59,5 @@ module Hashie
     include Hashie::Extensions::SymbolizeKeys::ClassMethods
   end
 
-  require 'hashie/railtie' if defined?(::Rails)
+  require 'hashie/railtie' if defined?(::Rails::Railtie)
 end
